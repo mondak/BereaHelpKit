@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.bereahelpkit"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/helpkiticon"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Sherlock" >
+        <activity
+            android:name="com.example.bereahelpkit.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.jacob.patton.bereaconvo.StartConvo"
+            android:icon="@drawable/bc_icon"
+            android:label="@string/convoApp"
+            android:parentActivityName="com.example.bereahelpkit.MainActivity" />
+        <activity
+            android:name="com.jacob.patton.bereaconvo.SwagActivity"
+            android:icon="@drawable/swagbucks_icon"
+            android:label="@string/swagApp" />
+        <activity
+            android:name="com.jacob.patton.bereaconvo.About"
+            android:icon="@drawable/bc_icon"
+            android:label="@string/aboutApp" />
+        <activity
+            android:name="com.bereacollege.map.MapActivity"
+            android:icon="@drawable/bcmapicon"
+            android:label="@string/mapApp"
+            android:parentActivityName="com.example.bereahelpkit.MainActivity" />
+        <activity
+            android:name="com.bereacollege.map.AboutMaps"
+            android:icon="@drawable/bcmapicon"
+            android:label="@string/aboutMap"
+            android:parentActivityName="com.bereacollege.map.MapActivity" />
+        <activity
+            android:name="com.example.bereahelpkit.FaqListing"
+            android:icon="@drawable/faq"
+            android:label="@string/title_activity_faq"
+            android:parentActivityName="com.example.bereahelpkit.MainActivity" />
+        <activity
+            android:name="com.example.bereahelpkit.About"
+            android:icon="@drawable/helpkiticon"
+            android:label="@string/title_activity_about"
+            android:parentActivityName="com.example.bereahelpkit.MainActivity" />
+        <activity
+            android:name="com.example.bereahelpkit.FaqFragment"
+            android:label="@string/title_activity_faq_fragment" >
+        </activity>
+        <activity
+            android:name="com.example.bereahelpkit.FAQData"
+            android:label="@string/title_activity_faqdata" >
+        </activity>
+        <activity
+            android:name="com.example.bereahelpkit.Faq"
+            android:label="@string/title_activity_faq" >
+        </activity>
+        <activity
+            android:name="com.example.bereahelpkit.FaqFragment"
+            android:label="@string/title_activity_faq_adapter" >
+        </activity>
+        <activity
+            android:name="com.example.bereahelpkit.FaqDetail"
+            android:label="@string/title_activity_faq_detail" >
+        </activity>
+    </application>
+
+</manifest>
