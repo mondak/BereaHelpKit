@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:background="#303030"
+	android:paddingLeft="15dp"
+	android:paddingTop="15dp" >
+
+    
+    <TextView 
+       
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sliding_info" 
+        android:paddingBottom="5dp"
+        android:textSize="25sp"
+     />
+    
+     <View 
+	    android:layout_width="match_parent"
+	    android:layout_height="1dip"
+	    android:background="#CCCCCC" 
+	     />
+	 
+     
+     
+     
+    <TextView
+        android:id="@+id/ALL"
+        android:drawableLeft="@drawable/all_convos"
+        android:drawablePadding="5dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/all_button" 
+        android:textSize="25sp"
+        android:paddingTop="10dp"
+        />
+    
+    	
+
+    
+  	<TextView
+  	    android:id="@+id/AFTERNOON"
+        android:drawableLeft="@drawable/afternoon_convos"
+        android:drawablePadding="5dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/afternoon_button"
+        android:textSize="25sp" 
+        android:paddingTop="10dp"
+       /> 
+    
+    <TextView
+        android:id="@+id/EVENING"
+        android:drawableLeft="@drawable/evening_convos"
+        android:drawablePadding="5dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/evening_button" 
+        android:clickable="true"
+        android:textSize="25sp"
+        android:paddingTop="10dp"
+        />
+    
+  	<TextView
+  	    android:id="@+id/SPECIAL"
+  	    android:drawableLeft="@drawable/special_convos"
+  	    android:drawablePadding="5dp"
+       	android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/special_button" 
+        android:textSize="25sp"
+        android:clickable="true"
+        android:paddingTop="10dp"/>
+    
+
+</LinearLayout>
